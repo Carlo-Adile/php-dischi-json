@@ -35,14 +35,14 @@ var_dump($json_string);
     </nav>
   </header>
 
-  <main>
+  <main id="my_main">
     <div class="container-xl">
-      <div class="row">
-        <div class="col" v-for="album in albums" :key="album.id">
+      <div class="row row-cols-4 my-4">
+        <div class="col mb-4" v-for="album in albums" :key="album.id">
           <div class="card">
             <img class="card-img-top" :src="album.poster" alt="album.title" />
             <div class="card-body">
-              <h4 class="card-title">{{ album.title }}</h4>
+              <h5 class="card-title">{{ album.title }}</h5>
               <p class="card-text">{{ album.author }}</p>
             </div>
           </div>

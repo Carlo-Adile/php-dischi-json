@@ -1,6 +1,13 @@
 *{
   box-sizing: border-box;
 }
+body{
+  
+}
 #my_header{
+  
+  background-color: #151515;
+}
+#app{
   background-color: #282828;
 }
